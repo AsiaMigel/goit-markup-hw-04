@@ -1,0 +1,398 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #434455;
+    background-color: var(--background-color);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p, 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul, 
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+:root {
+    --title-color: #2E2F42;
+    --typical-lh: 1.5;
+    --background-color: #FFFFFF
+}
+
+.second-title {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--title-color);
+}
+
+.third-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+}
+
+.text {
+    font-size: 16px;
+    line-height: var(--typical-lh);
+    letter-spacing: 0.02em;
+}
+
+.btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: var(--typical-lh);
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/*-----------HEADER-------------*/
+
+.header {
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.header-cnt{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    margin-right: 76px;
+}
+
+.logo-span {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.h-span {
+    color: #2E2F42;
+}
+
+.header-list {
+    display: flex;
+    gap: 40px;
+    
+}
+
+.header-address-item {}
+
+.header-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: var(--typical-lh);
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+    padding: 24px 0;
+}
+
+.header-link:is(:hover, :focus) {
+    color: #404BBF;
+}
+
+.header-address {
+    font-style: normal;
+    display: flex;
+    margin-left: auto;
+}
+
+.header-address-list {
+    display: flex;
+    gap: 40px;
+}
+
+.header-address-item {
+    padding: 24px 0;
+}
+
+.header-address-link {
+    font-size: 16px;
+    line-height: var(--typical-lh);
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.header-address-link:is(:hover, :focus) {
+    color: #404BBF;
+}
+
+/*-----------HERO-------------*/
+
+.hero {
+    background-color: #2E2F42;
+    padding: 188px 0;
+}
+
+.hero-ctn {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    max-width: 496px;
+}
+.hero-btn {
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    margin-top: 48px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    min-width: 169px;
+    height: 56px;
+}
+
+.hero-btn:is(:hover, :focus) {
+    background-color: #404BBF;
+}
+
+/*-----------BENEFITS-------------*/
+
+.benefits {
+    padding: 120px 0;
+}
+
+.benefitst-title {
+}
+
+.visually-hidden{
+     visibility: hidden;
+     pointer-events: none;
+     position: absolute;   
+}
+
+.benefits-list {
+    display: flex;
+    gap: 24px;
+}
+
+.benefits-item {
+    max-width: 264px;
+}
+
+.benefits-item-title {
+    margin-bottom: 8px;
+}
+
+.benefits-item-text {
+    padding-top: 8px;
+}
+
+/*-----------WORKS-------------*/
+
+.works {
+    padding-bottom: 120px;
+}
+
+.works-title {
+    margin-bottom: 72px;
+}
+
+.works-list {
+    display: flex;
+    gap: 24px;
+}
+
+.works-item {}
+
+.works-item-img {}
+
+/*-----------TEAM-------------*/
+
+.team {
+    background-color: #F4F4FD;
+    padding: 120px 0;
+}
+
+.team-title {
+    margin-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+
+.team-item {
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
+}
+
+.team-item-img {}
+
+.team-description{
+    padding: 32px 16px;
+}
+
+.team-item-name {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.team-item-text {
+    text-align: center;
+}
+
+
+/*-----------PORTFOLIO-------------*/
+/*--------------MENU-------------*/
+
+.portfolio {
+    padding: 96px 0 120px;
+}
+
+.portfolio-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+
+.portfolio-item {}
+
+.portfolio-btn {
+    background-color: #F4F4FD;
+    color: #4D5AE5;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: 1px solid #E7E9FC;
+
+}
+
+.portfolio-btn:is(:hover, :focus) {
+    background-color: #404BBF;
+    color: #FFFFFF;
+    border: 1px solid transparent;
+}
+
+.example-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.example-item {}
+
+.example-link {}
+
+.example-img {}
+
+.example-card{
+    padding: 32px 16px;
+    border: 1px solid #E7E9FC;
+    border-top: none;
+}
+
+.example-title {
+    margin-bottom: 8px;
+}
+
+.example-text {
+    color: #434455;
+}
+
+
+/*-----------FOOTER-------------*/
+
+.footer {
+    background-color: var(--title-color);
+    padding: 100px 0;
+}
+
+.logo-footer{
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.footer-link{
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.f-span {
+    color: #F4F4FD;
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: var(--typical-lh);
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+    max-width: 264px;
+    margin-top: 17.5px;
+}
