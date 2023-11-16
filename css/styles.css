@@ -97,6 +97,7 @@ img {
 
 .header {
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-cnt{
@@ -118,7 +119,6 @@ img {
     text-transform: uppercase;
     color: #4d5ae5;
     margin-right: 76px;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .logo-span {
@@ -190,6 +190,7 @@ img {
 
 .header-address-item {
     padding: 24px 0;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-address-link {
@@ -197,7 +198,7 @@ img {
     line-height: var(--typical-lh);
     letter-spacing: 0.02em;
     color: #434455;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 
 .header-address-link:is(:hover, :focus) {
