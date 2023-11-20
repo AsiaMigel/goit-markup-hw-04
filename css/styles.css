@@ -456,7 +456,11 @@ border-radius: 0px 0px 4px 4px;
     display: flex;
 }
 
-.container-logo{}
+.container-logo{
+    display: flex;
+    align-items: baseline;
+    margin-right: 120px;
+}
 
 .logo-container{
     display: flex;
@@ -496,6 +500,7 @@ font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--background-color);
+margin-bottom: 16px;
 }
 
 .social-list-item{
@@ -528,7 +533,7 @@ padding-top: 16px;
 }
 
 .social-list-icon{
-    width: 24px;
-    height: 24px;
+    width: 24;
+    height: 24;
     fill: #f4f4fd;
 }
