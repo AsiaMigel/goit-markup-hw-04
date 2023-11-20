@@ -456,7 +456,9 @@ border-radius: 0px 0px 4px 4px;
     display: flex;
 }
 
-.container-logo{
+.container-logo{}
+
+.logo-container{
     display: flex;
     align-items: baseline;
     margin-left: 156px;
