@@ -49,6 +49,7 @@ img {
     text-transform: capitalize;
     color: var(--title-color);
     margin-bottom: 16px;
+    font-weight: 700;
 }
 
 .third-title {
@@ -396,14 +397,13 @@ border-radius: 0px 0px 4px 4px;
 .example-list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    gap: 48px 24px;
 }
 
 .example-list-img{
     position: relative;
     overflow: hidden;
+    
 }
 
 .overlay{
@@ -414,14 +414,10 @@ border-radius: 0px 0px 4px 4px;
     height: 100%;
     color: #F4F4FD;
     font-size: 16px;
-    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding: 40px 32px 164px 32px;
+    padding: 40px 32px;
     background-color: #4D5AE5;
-    background-image: linear-gradient (0deg,
-        rgba(77, 90, 229, 0.10) 0%, rgba(77, 90, 229, 0.10) 100%);
-    overflow: auto;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -445,6 +441,9 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .example-item{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
